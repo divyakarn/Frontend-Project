@@ -1,0 +1,43 @@
+<ion-header [translucent]="true" class='ion-no-border'>
+  <ion-toolbar>
+    <!-- <ion-title class="ion-text-center
+    ">
+      Blank
+    </ion-title> -->
+    <div class="btnhlder">
+      <ion-button class="ion-text-right specialbtn" color="dark">
+        <ion-icon slot="icon-only" name="home"></ion-icon>
+      </ion-button>
+
+    </div>
+    <!-- <ion-button class="ion-text-right" color="dark">
+      <ion-icon slot="icon-only" name="home"></ion-icon>
+    </ion-button> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="mainbox">
+    <div class="imgholder">
+
+    </div>
+    <div class="textholder">
+      <div class="textbox">
+        <p>Hello, Max which service you need?</p>
+      </div>
+    </div>
+  </div>
+  <div class="itemlistcont">
+    <div class="cardbox" *ngFor="let card of cards; let i = index">
+      <div class="imageholder">
+        <div class="imgbox">
+          <img [src]="card.imagePath" alt="" srcset="">
+        </div>
+      </div>
+      <div class="textcont ion-text-center">{{card.title}}</div>
+    </div>
+  </div>
+
+
+
+</ion-content>

@@ -1,0 +1,102 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+.mainbox{
+  width:100%;
+  height:200px;
+  // background-color: yellow;
+  padding:20px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.imgholder{
+  width: 30%;
+  height: 100%;
+  // background-color: rebeccapurple;
+  background-image: url("../../assets/image/ldka.png");
+  background-size: cover;
+}
+
+.textholder{
+  width:60%;
+  height:100%;
+  // padding: 0px 20px;
+  // padding-top: 0px;
+//  background-color:orange;
+}
+.btnhlder{
+ position: absolute;
+ right: 0;
+ top: 0;
+  // background-color: red;
+  border-radius: 50px;
+
+}
+.specialbtn{
+  position: relative;
+  // width: 100%;
+  // height: 100%;
+  padding: 2;
+  
+}
+.textbox{
+  padding:0;
+  font-size: 30px;
+  // background-color: blue;
+}
+.imageholder{
+  width: 100%;
+  height:90px;
+  // background-color: yellow;
+  padding:20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imageholder>.imgbox>img{
+  width:90%;
+  height: 90%;
+ 
+
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+.itemlistcont{
+  width:100%;
+  // background-color: brown;
+  height: 500px;
+  padding:20px 50px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.cardbox{
+  width:110px;
+  height:110px;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 28px;
+  box-shadow: 3px 3px 7px 1px rgb(94, 94, 94) ;
+}
