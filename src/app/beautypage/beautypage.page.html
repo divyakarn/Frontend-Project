@@ -1,0 +1,27 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">beautypage</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="mainbox" *ngFor="let parlor of parlors" [routerLink]="['beautydetailspage']">
+    <div class="cardbox">
+      <div class="imagebox">
+
+
+      </div>
+      <div class="desbox">
+        <p class="heading">This is the heading</p>
+        <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, corporis.</p>
+      </div>
+
+
+    </div>
+
+  </div>
+
+</ion-content>

@@ -5,9 +5,9 @@
       Blank
     </ion-title> -->
     <div class="btnhlder">
-      <ion-button class="ion-text-right specialbtn" color="dark" routerLink="/mainpage">
+      <!-- <ion-button class="ion-text-right specialbtn" color="dark" routerLink="/mainpage">
         <ion-icon slot="icon-only" name="home"></ion-icon>
-      </ion-button>
+      </ion-button> -->
 
     </div>
     <!-- <ion-button class="ion-text-right" color="dark">
@@ -29,7 +29,7 @@
   </div>
   <div class="itemlistcont">
     <div class="cardbox" *ngFor="let card of cards; let i = index">
-      <div class="imageholder">
+      <div class="imageholder" routerLink="{{card.navPath}}">
         <div class="imgbox">
           <img [src]="card.imagePath" alt="" srcset="">
         </div>
@@ -37,6 +37,7 @@
       <div class="textcont ion-text-center">{{card.title}}</div>
     </div>
   </div>
+
 
 
 

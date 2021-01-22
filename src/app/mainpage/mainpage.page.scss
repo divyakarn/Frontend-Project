@@ -1,0 +1,41 @@
+.itemlistcont{
+    width:100%;
+    // background-color: brown;
+    height: 300px;
+    padding:0px 40px;
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+  .cardbox{
+    width:80px;
+    height:80px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+    box-shadow: 3px 3px 7px 1px rgb(94, 94, 94) ;
+  }
+  .imageholder{
+    width: 100%;
+    height:90px;
+    // background-color: yellow;
+    padding:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .imageholder>.imgbox>img{
+    width:90%;
+    height: 90%;
+  }
+  .box1{
+    background-image: url("../../assets/image/banner.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .headinghldr{
+      padding-left: 20px;
+      font-weight: 300;
+  }
+  

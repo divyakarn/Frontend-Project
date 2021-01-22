@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+.mainbox{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+ 
+}
+// .heightspec{
+//     width: 500px;
+//     height: 500px;
+// }
+
+
+
+.cardbox{
+
+    width:95%;
+    background-color:white;
+    border: solid rgb(75, 74, 74) 1px;
+    border-radius: 5px;
+    height:150px;
+    display: flex;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px #e9e9e9;
+    
+}
+.imagebox{
+    height:90%;
+    background-color: rebeccapurple;
+    width: 100px;
+    border-radius: 8px;
+    background-image: url("https://www.thespruce.com/thmb/vMZRLeSg2pxqHxTVEDUXx9IQ_Hc=/2000x1334/filters:fill(auto,1)/clean-new-home-before-moving-2435799-02-71f8349ba4e644019d22f19172523761.jpg");
+    background-size: cover;
+}
+.desbox{
+    height:90%;
+    // background-color: orange;
+    width: 300px;
+    padding: 2px  10px;
+}
+.heading{
+    font-size: 20px;
+    font-weight: 500;
+}
+

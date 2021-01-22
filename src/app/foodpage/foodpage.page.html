@@ -1,0 +1,31 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Restaurant</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="mainbox" *ngFor="let restaurant of restaurants" [routerLink]="['fooddetailspage']">
+    <div class="cardbox">
+      <div class="imagebox">
+
+
+      </div>
+      <div class="desbox">
+        <p class="heading">Restaurant Name</p>
+        <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, corporis.</p>
+      </div>
+
+
+    </div>
+
+  </div>
+  <!-- <app-google-map class="heightspec"></app-google-map> -->
+
+
+
+
+</ion-content>

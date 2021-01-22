@@ -1,10 +1,11 @@
+import { GoogleMapComponent } from './google-map/google-map.component';
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
   {
     path: '',
@@ -13,8 +14,35 @@ const routes: Routes = [
   },
   {
     path: 'mainpage',
-    loadChildren: () => import('./mainpage/mainpage.module').then( m => m.MainpagePageModule)
+    loadChildren: () => import('./mainpage/mainpage.module').then(m => m.MainpagePageModule)
   },
+  {
+    path: 'cleaningpage',
+    loadChildren: () => import('./cleaningpage/cleaningpage.module').then(m => m.CleaningpagePageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./signup/signup.module').then(m => m.SignupPageModule)
+  }, {
+    path: 'map',
+    component: GoogleMapComponent
+  },
+  {
+    path: 'electripage',
+    loadChildren: () => import('./electripage/electripage.module').then( m => m.ElectripagePageModule)
+  },
+  {
+    path: 'beautypage',
+    loadChildren: () => import('./beautypage/beautypage.module').then( m => m.BeautypagePageModule)
+  },
+  {
+    path: 'foodpage',
+    loadChildren: () => import('./foodpage/foodpage.module').then( m => m.FoodpagePageModule)
+  }
 ];
 
 @NgModule({
